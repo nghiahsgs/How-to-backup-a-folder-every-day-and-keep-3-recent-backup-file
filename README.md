@@ -23,13 +23,13 @@ find /root/backup_name -type f -mmin +15 -delete
 ```
 
 
-NOTE:
-Remove all the files modified older than 15 mins ago
+
+### NOTE: To Remove all the files modified older than 15 mins ago
 ```
 find /root/backup_name -type f -mmin +15 -delete
 ```
 
-Remove all the files modified older than 3 days ago
+### NOTE: Remove all the files modified older than 3 days ago
 ```
 find /root/backup_name -type f ! -newermt "$(date -d '10 days ago' +'%Y-%m-%d')" -delete
 ```
