@@ -19,7 +19,7 @@ BACKUP_FILE="backup-$(date +%Y%m%d%H%M%S).7z"
 7z a "${BACKUP_DIR}/${BACKUP_FILE}" "${TARGET_BACKUP_DIR}"
 
 # Remove all the files modified older than 15 mins ago
-find /root/backup_name -type f -mmin +15 -delete
+find "${BACKUP_DIR}" -type f -mmin +15 -delete
 ```
 
 
