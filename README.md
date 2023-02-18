@@ -38,7 +38,7 @@ find /root/backup_name -type f ! -newermt "$(date -d '10 days ago' +'%Y-%m-%d')"
 ```
 crontab -e
 ```
-add in the end of line, it will run 2PM every day
+add in the end of line, it will run 2AM every day
 ```
 0 2 * * * /bin/bash /path/to/backup.sh
 ```
